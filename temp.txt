@@ -1,0 +1,41 @@
+- WCF in single components in VS installer 
+- What is assembly in C#?
+	- An assembly contains compiled code (usually in the form of .NET Intermediate
+		Language (IL)) and metadata that describes the code.
+	- Typically has the file extension .exe or .dll (dynamic link library)
+	- An assembly contains one or more modules, each containing IL code and metadata. 
+		- IL code is stored in portable executable (PE) file, which can be executed by CLR or loaded into another process as a library. 
+	- Assemblies allow us to divide our code into logical units (ie class libraries) that can be reused by multiple applications.
+	- Create an assembly using the 'csc' compiler or use an IDE like VS
+	- Assembly cache:
+		- Private and global assembly cache (when an assembly is needed for multiple projects)
+	- Types of assembly:
+		- Process assembly: has .exe files
+		- Library assembly: has .dll files 
+			- Private assembly 
+				- To use the functions here, we must copy it separately into each application folder where we want to use it 
+				- Copy functions only to BIN folder of each application folder, one strict requirement of private assembly
+			- Share assembly (aka public assembly)
+				- Only one copy is needed, no copy needed
+
+	- An assembly is a single unit of deployment
+	- 
+- What are attributes in C#:
+	- An attribute in C# is a piece of metadata which is added to a program element (ie class, method, or property) to provide
+		additional information about that element. 
+	- declared using `[AttributeName]` syntax, applied to a program element by placing them immediately before the element they are intended to modify
+	- Can also specify arguments for an attribute
+	- To define custom attribute:
+		- we have to create a class and inherit from System.Attribute
+		- [AttributeUsage(AttributeTargets.Method)] this is for Method, we can have this for class, property and more
+		- can also define optional arguments for your custom attribute by using the System.ComponentModel.DefaultValueAttribute class
+		- 
+- What are DLL files?
+	- exe files run in their own memory or own address space 
+	- dll files run inside some other memory space, it cannot run on its own
+		- it needs a host to run it 
+	- dll are reusable 
+	- 
+- What is a contract?
+	- Service contract 
+	- Data contract 
