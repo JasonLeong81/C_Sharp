@@ -19,7 +19,12 @@
 				- Only one copy is needed, no copy needed
 
 	- An assembly is a single unit of deployment
+	- Assemlies can be single file (stored in just one file, easier to deal with) or multi-file (stored in multiple files)
+	- A private assembly is used by a single application, and is stored in that application's installation directory. A private assembly is only accessible to the application that uses it, and is not intended to be shared with other applications.
+	- A shared assembly is stored in a global location and can be used by multiple applications. Shared assemblies are usually deployed to the global assembly cache (GAC), which is a special directory for shared assemblies. Shared assemblies are intended to be shared by multiple applications, and are typically deployed as part of a software library or framework.
+	- In general, private assemblies are used for application-specific code, while shared assemblies are used for code that is intended to be shared by multiple applications.
 	- 
+
 - What are attributes in C#:
 	- An attribute in C# is a piece of metadata which is added to a program element (ie class, method, or property) to provide
 		additional information about that element. 
@@ -34,8 +39,12 @@
 	- exe files run in their own memory or own address space 
 	- dll files run inside some other memory space, it cannot run on its own
 		- it needs a host to run it 
-	- dll are reusable 
-	- 
+	- dll are for reusability  
+	
 - What is a contract?
 	- Service contract 
 	- Data contract 
+
+- 'internal' access modifier  
+	- "internal" keyword is used to specify that a member (such as a field, method, or property) is accessible only within the same assembly.
+	- 
