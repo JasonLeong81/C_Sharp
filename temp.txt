@@ -40,10 +40,6 @@
 	- dll files run inside some other memory space, it cannot run on its own
 		- it needs a host to run it 
 	- dll are for reusability  
-	
-- What is a contract?
-	- Service contract 
-	- Data contract 
 
 - 'internal' access modifier  
 	- "internal" keyword is used to specify that a member (such as a field, method, or property) is accessible only within the same assembly.
