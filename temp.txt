@@ -25,21 +25,6 @@
 	- In general, private assemblies are used for application-specific code, while shared assemblies are used for code that is intended to be shared by multiple applications.
 	- 
 
-- What are attributes in C#:
-	- An attribute in C# is a piece of metadata which is added to a program element (ie class, method, or property) to provide
-		additional information about that element. 
-	- declared using `[AttributeName]` syntax, applied to a program element by placing them immediately before the element they are intended to modify
-	- Can also specify arguments for an attribute
-	- To define custom attribute:
-		- we have to create a class and inherit from System.Attribute
-		- [AttributeUsage(AttributeTargets.Method)] this is for Method, we can have this for class, property and more
-		- can also define optional arguments for your custom attribute by using the System.ComponentModel.DefaultValueAttribute class
-		- 
-- What are DLL files?
-	- exe files run in their own memory or own address space 
-	- dll files run inside some other memory space, it cannot run on its own
-		- it needs a host to run it 
-	- dll are for reusability  
 
 - 'internal' access modifier  
 	- "internal" keyword is used to specify that a member (such as a field, method, or property) is accessible only within the same assembly.
