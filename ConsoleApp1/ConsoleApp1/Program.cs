@@ -1,16 +1,14 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Security.AccessControl;
-//using Team;
-
-
 class Hello
 {
     static void Main(string[] args)
     {
         // Main is not required to be placed inside a class. 
-        //CF_231A x = new CF_231A();
+        //CF_158A x = new CF_158A();
         //Console.WriteLine(x.test());
 
 
@@ -21,14 +19,13 @@ class Hello
 
     }
 
-    string test()
+
+
+
+    long test()
     {
-        return "hi";
+        return 0l;
     }
-
-
-
-
 
 
     void d()
@@ -51,7 +48,21 @@ class Hello
         }
         else
         {
-            throw new Exception("Valid is invalid.");
+            throw new Exception("getInt is invalid.");
+        }
+    }
+
+    long getLong()
+    {
+        long result;
+        bool valid = long.TryParse(Console.ReadLine(), out result);
+        if (valid)
+        {
+            return result;
+        }
+        else
+        {
+            throw new Exception("getUlong is invalid.");
         }
     }
 

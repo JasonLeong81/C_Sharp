@@ -2,9 +2,9 @@
 
 namespace nextRound
 {
-    class CF_
+    class CF_158A
     {
-        int test()
+        public int test()
         {
             int n; int k;
             int[] input = RI.getIntArray();
@@ -69,7 +69,7 @@ namespace nextRound
                 middle = (right + left) / 2;
                 if (input[middle] == target)
                 {
-                    if (middle > 0)
+                    if (middle > 0) // can't less than left here since left moves. (Test case: 5 5, 5 4 3 0 0)
                     {
                         if (input[middle - 1] == target)
                         {

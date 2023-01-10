@@ -20,5 +20,19 @@
                 throw new Exception("Valid is invalid.");
             }
         }
+
+        public static long getLong()
+        {
+            long result;
+            bool valid = long.TryParse(Console.ReadLine(), out result);
+            if (valid)
+            {
+                return result;
+            }
+            else
+            {
+                throw new Exception("getUlong is invalid.");
+            }
+        }
     }
 }
