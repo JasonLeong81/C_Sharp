@@ -1,8 +1,11 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Security.AccessControl;
+using System.Xml.XPath;
+//using System.Collections.Concurrent;
+//using System.Collections.Generic;
+//using System.Runtime.CompilerServices;
+//using System.Security.AccessControl;
+
+
 class Hello
 {
     static void Main(string[] args)
@@ -13,24 +16,40 @@ class Hello
 
 
         Hello y = new Hello();
-        var a = y.test(); // compiler will infer the first value type 
-        Console.WriteLine(a);
+        //var a = y.test(); // compiler will infer the first value type 
+        //Console.WriteLine(a);
+
+        y.test();
 
 
+    }
+
+    void test()
+    {
+        int t = getInt();
+
+        while(t --> 0){
+            int n = getInt();
+            int[] input = getIntArray();
+            int result = 1;
+            foreach(int i in input)
+            {
+                result *= i;
+            }
+        }
     }
 
 
 
 
-    long test()
+    void print(double? x = null)
     {
-        return 0l;
+        Console.WriteLine($"{x}---");
     }
 
-
-    void d()
+    void d(int? x=null)
     {
-        Console.WriteLine("---------------------------");
+        Console.WriteLine($"{x}---------------------------");
     }
 
     int[] getIntArray()
