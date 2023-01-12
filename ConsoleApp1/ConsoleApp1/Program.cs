@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Xml.XPath;
 //using System.Collections.Concurrent;
 //using System.Collections.Generic;
@@ -26,25 +27,23 @@ class Hello
 
     void test()
     {
-        int t = getInt();
-
-        while(t --> 0){
-            int n = getInt();
-            int[] input = getIntArray();
-            int result = 1;
-            foreach(int i in input)
-            {
-                result *= i;
-            }
-        }
+        int x = 1;
     }
 
 
 
-
+    void printArr(int[] arr)
+    {
+        Console.WriteLine("Start");
+        foreach (int i in arr)
+        {
+            Console.WriteLine(i);
+        }
+        Console.WriteLine("Done");
+    }
     void print(double? x = null)
     {
-        Console.WriteLine($"{x}---");
+        Console.WriteLine($"{x}");
     }
 
     void d(int? x=null)

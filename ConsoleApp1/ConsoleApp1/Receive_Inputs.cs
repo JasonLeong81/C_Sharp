@@ -34,5 +34,24 @@
                 throw new Exception("getUlong is invalid.");
             }
         }
+
+        public static void printArr(int[] arr)
+        {
+            Console.WriteLine("Start");
+            foreach (int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Done");
+        }
+        public static void print(double? x = null)
+        {
+            Console.WriteLine($"{x}");
+        }
+
+        public static void d(int? x = null)
+        {
+            Console.WriteLine($"---------------------------{x}");
+        }
     }
 }

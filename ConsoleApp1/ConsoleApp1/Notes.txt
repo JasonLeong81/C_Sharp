@@ -4,6 +4,7 @@ if we could defeat the max health monster, then we sure as hell can defeat all t
 
 divisibilityby2N: 1200
 
-calculate the product of input array AS t
-sort the input array 
-2**n - t = tt, find combination of index that give us tt
+to be divisible by 2**n, it means divisible by 2, n times
+we find how many 2 we have in our expression then see which index can give us more.
+sort the index (two generator) in descending order so we can approach this problem with greedy method 
+
