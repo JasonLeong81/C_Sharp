@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Xml.XPath;
 //using System.Collections.Concurrent;
 //using System.Collections.Generic;
@@ -27,12 +28,10 @@ class Hello
 
     void test()
     {
-        int x = 1;
+        int i = 0;
     }
 
-
-
-    void printArr(int[] arr)
+    public static void printArr(int[] arr)
     {
         Console.WriteLine("Start");
         foreach (int i in arr)
@@ -41,22 +40,29 @@ class Hello
         }
         Console.WriteLine("Done");
     }
-    void print(double? x = null)
+    public static void print(double? x = null, bool dash = true)
     {
-        Console.WriteLine($"{x}");
+        if (dash)
+        {
+            Console.Write($"#####################{x}");
+        }
+        else
+        {
+            Console.Write($"{x} ");
+        }
     }
 
-    void d(int? x=null)
+    public static void d(int? x=null)
     {
         Console.WriteLine($"{x}---------------------------");
     }
 
-    int[] getIntArray()
+    public static int[] getIntArray()
     {
         int[] result = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
         return result;
     }
-    int getInt()
+    public static int getInt()
     {
         int result;
         bool valid = int.TryParse(Console.ReadLine(), out result);
@@ -70,7 +76,7 @@ class Hello
         }
     }
 
-    long getLong()
+    public static long getLong()
     {
         long result;
         bool valid = long.TryParse(Console.ReadLine(), out result);
@@ -82,6 +88,13 @@ class Hello
         {
             throw new Exception("getUlong is invalid.");
         }
+    }
+
+    public static long[] getLongArr()
+    {
+        long[] result = Array.ConvertAll(Console.ReadLine().Split(' '), long.Parse);
+        return result;
+
     }
 
 }

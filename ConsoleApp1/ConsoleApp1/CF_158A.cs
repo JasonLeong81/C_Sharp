@@ -70,6 +70,7 @@ namespace nextRound
                 if (input[middle] == target)
                 {
                     if (middle > 0) // can't less than left here since left moves. (Test case: 5 5, 5 4 3 0 0)
+                        // pending test: i could do middle >= left
                     {
                         if (input[middle - 1] == target)
                         {

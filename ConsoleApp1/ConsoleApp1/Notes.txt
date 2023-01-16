@@ -8,3 +8,7 @@ to be divisible by 2**n, it means divisible by 2, n times
 we find how many 2 we have in our expression then see which index can give us more.
 sort the index (two generator) in descending order so we can approach this problem with greedy method 
 
+Scuza: 1200
+
+max(a1,...,ai) then binary search for last occurance for highest meter that can be climbed 
+
