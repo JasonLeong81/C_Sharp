@@ -1,4 +1,4 @@
-﻿// Learn 1 uses some topics and Program.cs will use Learn 1 
+﻿// Learn 1 uses some topics (in dataStructures) and Program.cs will use Learn 1 
 using dataStructures;
 
 namespace Learn
@@ -10,9 +10,9 @@ namespace Learn
             DS x = new DS();
 
             x.DICTIONARY();
-
             x.LIST();
             x.HASH_SET();
+            x.t();
         }
     }
 }

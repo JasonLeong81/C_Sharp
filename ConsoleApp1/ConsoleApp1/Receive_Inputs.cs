@@ -1,5 +1,13 @@
-﻿namespace Receive_Inputs
+﻿/*
+ 1) int 32 bits
+ 2) long is 64 bits
+ 3) double 
+ */
+
+
+namespace Receive_Inputs
 {
+
     public class RI
     {
         /// <summary>
@@ -7,7 +15,7 @@
         /// </summary>
         /// <param name="integer"></param>
         /// <param name="dash"></param>
-        public static void print(int? integer, bool dash = false)
+        public static void print(int? integer, bool dash = true)
         {
             if (dash)
             {
@@ -25,7 +33,7 @@
         /// </summary>
         /// <param name="str"></param>
         /// <param name="dash"></param>
-        public static void print(string str, bool dash = false)
+        public static void print(string str, bool dash = true)
         {
             if (dash)
             {
@@ -54,7 +62,7 @@
         /// </summary>
         /// <param name="x"></param>
         /// <param name="dash"></param>
-        public static void print(double? x = null, bool dash = false)
+        public static void print(double? x = null, bool dash = true)
         {
             if (dash)
             {
