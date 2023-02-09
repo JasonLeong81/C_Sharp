@@ -2,6 +2,23 @@
 {
     public class RI
     {
+        /// <summary>
+        /// This method is for integer printing 
+        /// </summary>
+        /// <param name="integer"></param>
+        /// <param name="dash"></param>
+        public static void print(int? integer, bool dash = false)
+        {
+            if (dash)
+            {
+                Console.WriteLine($"Integer print: {integer}");
+            }
+            else
+            {
+                Console.WriteLine(integer);
+            }
+        }
+
 
         /// <summary>
         /// This method is for string printing 
@@ -12,7 +29,7 @@
         {
             if (dash)
             {
-                Console.WriteLine($"##############333{str}");
+                Console.WriteLine($"String print: {str}");
             }
             else
             {
@@ -25,36 +42,28 @@
         /// <param name="arr"></param>
         public static void printArr(int[] arr)
         {
-            Console.WriteLine("Start");
+            Console.WriteLine("Start Int Array Print");
             foreach (int i in arr)
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("Done");
+            Console.WriteLine("Done Int Array Print");
         }
         /// <summary>
-        /// This method is for nullable double debugging 
+        /// This method is for nullable double printing  
         /// </summary>
         /// <param name="x"></param>
         /// <param name="dash"></param>
-        public static void print(double? x = null, bool dash = true)
+        public static void print(double? x = null, bool dash = false)
         {
             if (dash)
             {
-                Console.Write($"#####################{x}");
+                Console.Write($"Double print: {x}");
             }
             else
             {
-                Console.Write($"{x} ");
+                Console.Write($"{x}");
             }
-        }
-        /// <summary>
-        /// This method is integer for debuggging 
-        /// </summary>
-        /// <param name="x"></param>
-        public static void d(int? x = null)
-        {
-            Console.WriteLine($"{x}---------------------------");
         }
 
         /// <summary>
@@ -104,7 +113,7 @@
         }
 
         /// <summary>
-        /// This method is to get long array input 
+        /// This method is to get long array input via empty space 
         /// </summary>
         /// <returns></returns>
         public static long[] getLongArr()

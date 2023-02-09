@@ -1,6 +1,6 @@
 ﻿using Receive_Inputs;
 
-namespace T
+namespace goingToTheCinema
 {
     class CF_1781B
     {
