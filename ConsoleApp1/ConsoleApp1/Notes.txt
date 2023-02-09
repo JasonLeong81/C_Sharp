@@ -12,3 +12,17 @@ Scuza: 1200
 
 max(a1,...,ai) then binary search for last occurance for highest meter that can be climbed 
 
+prefixSumAddicts: 1200 
+
+
+
+
+
+make it beautiiful 1783A - 800 
+ugly -> not ugly 
+	-- sort in desc
+	-- swap first encountered ugly number with either left or right (see which is diffeerent)-> sum of all elemeents behind it = current index's value
+		-- doesnt work for 1 1 1 9 
+	-- put largest num in front, only situation in which this doesnt work is if both max and min of array are equals
+		-- if both max and min are the same, then its no solution cuz we have cases like 1 1 1 1 
+

@@ -1,0 +1,2 @@
+﻿1) span<T> doesn't create a new object but just a slice of an array or string. there is also readonlyspan<T>, the read only version of span<T>
+2) 

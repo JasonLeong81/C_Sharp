@@ -7,6 +7,7 @@ using System.Xml.XPath;
 //using System.Runtime.CompilerServices;
 //using System.Security.AccessControl;
 
+using Learn; // for learning purposes
 
 class Hello
 {
@@ -21,14 +22,41 @@ class Hello
         //var a = y.test(); // compiler will infer the first value type 
         //Console.WriteLine(a);
 
-        y.test();
+        Learning x = new Learning();
+        x.test();
 
+        //y.test();
 
     }
 
-    void test()
+    void test() {
+        int a = 0;
+    }
+
+
+    /*
+     * 
+     */
+
+
+
+
+
+
+
+    public static void print(string str, bool dash=false)
     {
-        int i = 0;
+        if (dash)
+        {
+            Console.WriteLine($"##############333{str}");
+        }
+        else
+        {
+
+        }
+        {
+            Console.WriteLine(str);
+        }
     }
 
     public static void printArr(int[] arr)
